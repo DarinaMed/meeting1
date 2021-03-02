@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <style>
+
+      label{
+    display: block;
+}
+      span{display: block;
+}
+   
+
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <fieldset>
+               <legend>Information</legend> 
+                <label>
+                  Surname:*
+                     <input 
+                     placeholder="Your surname" 
+                     type="text" 
+                     name="family-name" 
+                     autocomplete="family-name"
+                     required>
+
+                </label>
+                <label>
+                Name:*
+                     <input 
+                     placeholder="Your name" 
+                     type="text" 
+                     name="name" 
+                     autocomplete="name"
+                     required>
+
+                </label>
+                <label>
+                Full date of birth:* 
+                     <input 
+                     placeholder="mm/dd/yyyy" 
+                     type="date" 
+                     name="date" 
+                     autocomplete="bday-day"
+                     required>
+               
+                </label>
+        
+                <label>
+                I accept the term of the agreement:*
+                     <input 
+                     type="checkbox" 
+                     value="send" >
+               
+                </label>
+             </fieldset>
+             <fieldset>
+                 <legend>Registration</legend> 
+                 <label> 
+                 E-mail:*
+                     <input 
+                     type="email" 
+                     name="email" 
+                     autocomplete="email"
+                     placeholder="email@example.com">
+                </label>
+                <label> 
+                Password:*
+                     <input 
+                     type="password" 
+                     name="password" 
+                     minlength="8">
+                </label>
+             </fieldset>
+             <fieldset>  
+                <legend> An interesting fact about you</legend>
+                <span>
+                Do you love cats?
+                     <label> 
+                         <input 
+                         type="radio" 
+                         name="cats" 
+                         value="yes">
+                         Yes
+                     </label>
+                     <label> 
+                         <input 
+                         type="radio" 
+                         name="cats" 
+                         value="no">
+                         No
+                     </label>
+        
+                </span>
+            
+                <label> 
+                What is your favorite color?
+                     <input 
+                     type="color" 
+                     name="color" >
+        
+                </label>
+                <label> 
+                What time do you go to bed?
+                     <input 
+                     type="time" 
+                     name="time"  
+                     placeholder="--:--:--">
+        
+                </label>
+                <label> 
+                What are your favorite brand of cars?
+                     <select size="3" multiple name="brand">
+                         <option value="bmw" name="bmv">BMW</option>
+                         <option selected value="nissan" name="nissan">NISSAN</option>
+                         <option value="audi">AUDI</option>
+                     </select>
+        
+                </label>
+                <label> 
+                How do you rate our work?
+                     <input 
+                     name="rate" 
+                     type="range" 
+                     min="0" 
+                     max="100" 
+                     step="1"   
+                     value="50">
+        
+                </label>
+             </fieldset>  
+         
+             <fieldset>
+                 <legend>Editional info:</legend>    
+                     <label>
+                        <span>Theme:*</span> 
+                             <input  
+                             type="text" 
+                             name="theme" 
+                             autocomplete="off">
+                     </label>
+                     <label>
+                         <span>Comments:*</span>
+                             <textarea required name="message"></textarea>
+                     </label>
+             </fieldset>
+        </div>     
+        <div>
+             <button type="submit">Submit</button>
+        </div>   
+
+    </form>
+</body>
+</html>
